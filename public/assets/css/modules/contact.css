@@ -1,0 +1,31 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.maps {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+form {
+    float: right;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    margin-top: auto;
+}
+
+.form {
+    margin-bottom: 205px;
+    margin-top: 18px;
+}
+h1 {
+    margin-bottom: 150px;
+    margin-top: 20px;
+}
