@@ -1,0 +1,20 @@
+.ald-explanation    {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-top: 80px;
+    font-family: "Arima", sans-serif;
+}
+
+.ald-explanation h2 {
+    margin-left: 50px;
+}
+
+.ald-explanation-welcome {
+    margin: 40px 0 10px 0;
+    font-size: 50px;
+}
+
+.ald-explanation-title  {
+    font-size: 50px;
+}

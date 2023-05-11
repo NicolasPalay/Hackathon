@@ -3,6 +3,7 @@
 @import 'modules/footer.css';
 @import 'modules/weather.css';
 @import 'modules/cardCars.css';
+@import 'modules/explination.css';
 /*variable declaration*/
 * {
     box-sizing: border-box;
