@@ -1,6 +1,8 @@
 .ald-navbar-full-nav    {
     background-color: #db6930;
     height: 50px;
+    position: sticky;
+    z-index: 100;
 }
 
 .ald-navbar-img   {
@@ -37,7 +39,8 @@
     left: 0 !important;
 }
 .menu__btn {
-    position: fixed;
+    margin-top: 10px;
+    position: sticky;
     top: 20px;
     left: 20px;
     width: 26px;
