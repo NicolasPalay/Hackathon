@@ -1,8 +1,24 @@
 {% extends 'layout.html.twig' %}
-
 {% block content %}
-    <h1>Hello Wilder !</h1>
-    <p>Find a complete CRUD example on <a href="/items">/items</a> page.</p>
+
+    <h1>LIVE YOUR VAN !</h1>
+
+    <div class="ald-backgroundcss-video">
+        <video src="/assets/images/California T6.1. Location.mp4" autoplay muted></video>
+        <div class="ald-form-home">
+            <input type="date" name="start"> <input type="date" name="return">
+                    <button type="submit" class="btn btn-primary">Let's go</button>
+
+
+            </form>
+        </div>
+        </div>
+    </div>
+
+
+
 {% include '/_includes/weather.html.twig' %}
+
     {% include '/_includes/cardCars.html.twig' %}
+
 {% endblock %}

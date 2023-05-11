@@ -18,8 +18,8 @@ class HomeController extends AbstractController
                 $cityGet = 'bordeaux';
             }
 
-
             $url = "http://api.openweathermap.org/data/2.5/weather?q={$cityGet}&appid=53d5eeb820d6ab866a4ff4ae1e4d9b3f&units=metric&lang=fr";
+
             $data = file_get_contents($url);
             $data = json_decode($data, true);
 

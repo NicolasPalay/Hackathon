@@ -1,3 +1,4 @@
+@import "modules/background-video.css";
 @import 'modules/navbar.css';
 @import 'modules/footer.css';
 @import 'modules/weather.css';
@@ -25,6 +26,7 @@ h1, h2, h3, h4, h5 {
 @font-face {
     font-family: 'Cantarell', sans-serif; /* text */
 }
+
 
 
 
