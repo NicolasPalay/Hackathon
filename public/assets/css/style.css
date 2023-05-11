@@ -1,3 +1,30 @@
-body {
-    color: #f76c6c;
+@import 'modules/navbar.css';
+@import 'modules/footer.css';
+@import 'modules/weather.css';
+/*variable declaration*/
+* {
+    box-sizing: border-box;
+    font-family: 'Cantarell', sans-serif;
+    padding: 0;
+    margin: auto 0;
 }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Arima', cursive;
+}
+
+@font-face {
+    font-family: 'Petrona', serif; /* link */
+}
+
+@font-face {
+    font-family: 'Arima', cursive; /* polices h1 et h2 */
+}
+
+@font-face {
+    font-family: 'Cantarell', sans-serif; /* text */
+}
+
+
+
+
