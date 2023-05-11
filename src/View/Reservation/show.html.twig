@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Item {{ reservation.title }}</h1>
+    <ul>
+
+        <li>{{ reservation.id_van }}</li>
+        <li>{{ reservation.start }}</li>
+        <li>{{ reservation.return }}</li>
+        <li>{{ reservation.first_name }}</li>
+        <li>{{ reservation.last_name }}</li>
+        <li>{{ reservation.email }}</li>
+    </ul>
+    <a href="/items">Back</a>
+{% endblock %}

@@ -4,34 +4,7 @@
     <h1>reservation</h1>
 
     <section class="cardCarsHome formReservation">
-    <form method="post">
-        <div class="row">
-        <input type="hidden" value="{{ data[0]}}" name="starting_date">
-        <input type="hidden" value="{{ data[1]}}" name="end_date">
-            <label for="champ"></label>
-            <input type="hidden" id="champ" name="champ" value="Valeur initiale">
-
-        <label class="col" for="van1" ><img onclick="document.getElementById('champ').value='1';" src="/assets/images/beach-two-first-photo.webp" alt=""></label>
-        <label class="col" for="van2" ><img onclick="document.getElementById('champ').value='2';" src="/assets/images/coast-two-first-photo.webp" alt=""></label>
-        <label class="col" for="van3" ><img onclick ="document.getElementById('champ').value='3';" src="/assets/images/edition-two-first-photo.webp" alt=""></label>
-
-
-
-       </div>
-        <div class="row">
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name">
-
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name">
-
-            <label for="email">Email</label>
-            <input type="text" name="email" value ="vlue">
-        </div>
-        <button class="reservButtonFirst"> Let's go</button>
-
-
-    </form>
+        {% include 'Reservation/_form.html.twig' %}
 
     </section>
 
