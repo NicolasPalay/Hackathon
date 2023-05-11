@@ -1,6 +1,7 @@
 @import 'modules/navbar.css';
 @import 'modules/footer.css';
 @import 'modules/weather.css';
+@import 'modules/cardCars.css';
 /*variable declaration*/
 * {
     box-sizing: border-box;

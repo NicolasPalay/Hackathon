@@ -1,0 +1,26 @@
+
+<section class="container">
+    <article class="row">
+    {% for car in cars %}
+
+        <div class="cardCarsHome col-md-4">
+
+        <div>
+            <img src="/assets/images/{{ car.first_photo_link }}.webp">
+        </div>
+
+<ul>
+            <li>🚐 {{ car.brand }}</li>
+            <li>🛠 {{ car.type }}</li>
+            <li>🕰 {{ car.year }}</li>
+
+            <li>👩‍👩‍👦‍👦 for 4</li> {% if car.type == "beach" %}
+            {% else %}
+            <li>🚿 outdoor shower</li>
+            <li>🚽 toilet</li>
+                {% endif %}
+</ul>
+    </div>
+{% endfor %}
+    </article>
+</section>
