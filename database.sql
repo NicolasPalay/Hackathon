@@ -100,9 +100,9 @@ create table car_choice
     id_user int not null,
     id_van  int not null,
     constraint fk_car_choice_user_id
-        foreign key (id_user) references aldiana.user (id_user),
+        foreign key (id_user) references user (id_user),
     constraint fk_car_choice_van_id
-        foreign key (id_van) references aldiana.van (id_van)
+        foreign key (id_van) references van (id_van)
 );
 
 create table location
@@ -110,9 +110,9 @@ create table location
     van_id         int not null,
     reservation_id int not null,
     constraint fk_Location_reservation_id
-        foreign key (reservation_id) references aldiana.reservation (id_reservation),
+        foreign key (reservation_id) references reservation (id_reservation),
     constraint fk_Location_van_id
-        foreign key (van_id) references aldiana.van (id_van)
+        foreign key (van_id) references van (id_van)
 );
 
 insert into van (id_van, brand, type, year, gear_box, first_photo_link, second_photo_link, third_photo_link, fourth__photo_link, fifth_photo_link)
