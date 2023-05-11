@@ -1,24 +1,28 @@
 {% extends 'layout.html.twig' %}
 {% block content %}
 
-    <h1>LIVE YOUR VAN !</h1>
+
 
     <div class="ald-backgroundcss-video">
+        <h1>LIVE YOUR VAN !</h1>
         <video src="/assets/images/California T6.1. Location.mp4" autoplay muted></video>
-        <div class="ald-form-home">
-            <input type="date" name="start"> <input type="date" name="return">
-                    <button type="submit" class="btn btn-primary">Let's go</button>
 
+            <div class="ald-form-home">
+                <form action="reservation" method="post">
+                <input type="date" name="start"> <input type="date" name="return">
+                <button class="reservButtonFirst"> Let's go</button>
+                </form>
+            </div>
 
-            </form>
-        </div>
-        </div>
+    </div>
     </div>
 
 
 
-{% include '/_includes/weather.html.twig' %}
+    {% include '/_includes/weather.html.twig' %}
 
     {% include '/_includes/cardCars.html.twig' %}
+
+
 
 {% endblock %}
