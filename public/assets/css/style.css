@@ -3,12 +3,17 @@
 @import 'modules/footer.css';
 @import 'modules/weather.css';
 @import 'modules/cardCars.css';
+@import 'modules/explination.css';
 /*variable declaration*/
 * {
     box-sizing: border-box;
     font-family: 'Cantarell', sans-serif;
     padding: 0;
     margin: auto 0;
+}
+
+body    {
+    background-color: #FFF4E4;
 }
 
 h1, h2, h3, h4, h5 {
