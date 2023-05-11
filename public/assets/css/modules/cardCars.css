@@ -1,0 +1,13 @@
+.cardCarsHome {
+    width:30%;
+padding:40px 20px 20px;
+    border-radius: 30px;
+    border: solid #FFAA00 1px;
+    box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
+    -webkit-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
+    -moz-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset; margin:20px 20px;
+}
+.cardCarsHome img {width:100%;}
+.cardCarsHome div{width:80%; height:170px;overflow: hidden;margin:0 auto;border-radius: 30px}
+.cardCarsHome li {list-style: none;width:80%;margin:10px auto;   width:50%}
+
