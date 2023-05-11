@@ -6,10 +6,12 @@
     font-family: "Arima", sans-serif;
 }
 
-.ald-explanation h2 {
-    margin-left: 50px;
+.ald-explanation-content h2   {
+    margin-bottom: 5px;
 }
-
+.ald-explanation-content    {
+    text-align: center;
+}
 .ald-explanation-welcome {
     margin: 40px 0 10px 0;
     font-size: 50px;
