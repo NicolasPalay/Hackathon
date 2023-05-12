@@ -18,4 +18,7 @@ return [
     'items/show' => ['ItemController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
+    'beach' => ['CarController', 'beach'],
+    'coast' => ['CarController', 'coast'],
+    'edition' => ['CarController', 'edition'],
 ];
