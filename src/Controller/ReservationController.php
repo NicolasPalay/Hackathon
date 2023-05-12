@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\CarsManager;
 use App\Model\ReservationManager;
 
 class ReservationController extends AbstractController
@@ -15,11 +16,24 @@ class ReservationController extends AbstractController
      * Show informations for a specific item
      */
     public function show(): ?string
-    { $reservation = array_map('trim', $_POST);
+    { $start = $_POST['start'];
+        $return = $_POST['return'];
+        $data = [$start,$return];
+
+            // clean $_POST data
+            $reservation = array_map('trim', $_POST);
+
+            // TODO validations (length, format...)
+            var_dump($reservation);
+
+        $carsManager = new CarsManager();
+        $cars = $carsManager->selectAll('title');
+
        /* $reservationManager = new ReservationManager();
         $reservation= $reservationManager->selectOneById($id);*/
 
-        return $this->twig->render('Reservation/show.html.twig', ['reservation=' => $reservation]);
+        return $this->twig->render('Reservation/show.html.twig', ['reservation' => $reservation,
+            ]);
     }
 
     public function add(): ?string

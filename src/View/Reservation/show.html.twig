@@ -1,15 +1,21 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>Item {{ reservation.title }}</h1>
-    <ul>
-
-        <li>{{ reservation.id_van }}</li>
-        <li>{{ reservation.start }}</li>
-        <li>{{ reservation.return }}</li>
-        <li>{{ reservation.first_name }}</li>
-        <li>{{ reservation.last_name }}</li>
-        <li>{{ reservation.email }}</li>
+    <div class="container"></div>
+    <h1>Votre reservation</h1>
+    <ul class="resulRes ">
+        {% if reservation.id_van == 1 %}
+        <li><img src="/assets/images/beach-two-first-photo.webp" alt=""></li>
+        {% elseif reservation.id_van == 5 %}
+            <li><img src="/assets/images/coast-two-first-photo.webp" alt=""></li>
+        {% elseif reservation.id_van == 9 %}
+            <li><img src="/assets/images/edition-two-first-photo.webp" alt=""></li>
+        {% endif %}
+        <li>Your departure date {{ reservation.start }}</li>
+        <li>Your return date {{ reservation.return }}</li>
+        <li>Your firstname {{ reservation.first_name }}</li>
+        <li>Your lastname {{ reservation.last_name }}</li>
+        <li>Your email{{ reservation.email }}</li>
     </ul>
     <a href="/items">Back</a>
 {% endblock %}
