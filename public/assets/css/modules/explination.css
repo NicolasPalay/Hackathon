@@ -14,12 +14,15 @@
 }
 .ald-explanation-content    {
     text-align: center;
+    margin-bottom: 100px;
 }
 .ald-explanation-welcome {
     margin: 40px 0 10px 0;
-    font-size: 50px;
+    font-size: 90px;
+    color: #db6930;
 }
 
 .ald-explanation-title  {
-    font-size: 50px;
+    font-size: 81px;
+    color: #ec7305;
 }

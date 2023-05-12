@@ -13,7 +13,7 @@ h1{
     position: relative;
     }
 .ald-backgroundcss-video h1{position: absolute;top: 30%;z-index: 99;
-    left:50%;width: 400px; margin-left:-200px; color :#ec7305}
+    left:50%;width: 532px; margin-left:-265px; color :#ec7305; font-size:70px }
 
 .ald-form-home{
     display: flex;

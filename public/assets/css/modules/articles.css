@@ -2,6 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 25px;
+}
+
+.ald-article-title h1{
+    font-size: 70px;
+    color: #ec7305;
+    margin-top: 150px;
+}
+
+.ald-article-cards h1   {
+    font-size: 65px;
+    text-align: center;
 }
 
 .ald-article-cards  {
