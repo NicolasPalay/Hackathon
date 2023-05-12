@@ -3,13 +3,25 @@
 @import 'modules/footer.css';
 @import 'modules/weather.css';
 @import 'modules/cardCars.css';
+@import "modules/insurance.css";
 @import "modules/rental-terms.css";
+@import "modules/privacy-police.css";
+@import "modules/terms & conditions.css";
+@import 'modules/explination.css';
+@import "modules/articles.css";
+@import "modules/coast.css";
+@import "modules/edition.css";
+
 /*variable declaration*/
 * {
     box-sizing: border-box;
     font-family: 'Cantarell', sans-serif;
     padding: 0;
     margin: auto 0;
+}
+
+a   {
+    text-decoration: none;
 }
 
 body    {

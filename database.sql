@@ -62,13 +62,7 @@ ALTER TABLE `item`
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-create table reservation
-(
-    id_reservation int auto_increment
-        primary key,
-    starting_date  date not null,
-    end_date       date not null
-);
+
 
 create table user
 (
@@ -93,6 +87,16 @@ create table van
     third_photo_link   varchar(255) not null,
     fourth__photo_link varchar(255) not null,
     fifth_photo_link   varchar(255) not null
+);
+create table reservation
+(
+    id_reservation int auto_increment
+        primary key,
+    starting_date  date not null,
+    end_date       date not null,
+    id_van_id int not null,
+    constraint fk_car_reservation_van_id
+        foreign key (id_van_id) references van (id_van)
 );
 
 create table car_choice

@@ -2,19 +2,22 @@
 
 namespace App\Controller;
 
-use App\Model\CarsManager;
+use App\Model\ReservationManager;
 
-class carsController extends AbstractController
+class ReservationController extends AbstractController
 {
     /**
-     * List items
+     * Reservation
      */
     public function index(): string
     {
-        $carsManager = new CarsManager();
-        $cars = $carsManager->selectAll('title');
 
-        return $this->twig->render('cars/index.html.twig', ['cars' => $cars]);
+
+        $start = $_POST['start'];
+        $return = $_POST['return'];
+        $data=[$start,$return];
+        var_dump($data);
+        return $this->twig->render('Reservation/add.html.twig',['data' => $data]);
     }
 
     /**
@@ -91,6 +94,4 @@ class carsController extends AbstractController
             header('Location:/items');
         }
     }
-
-
 }
