@@ -12,11 +12,21 @@ h1{
     width:100%;
     position: relative;
     }
-.ald-form-home{
+.ald-backgroundcss-video h1{position: absolute;top: 30%;z-index: 99;
+    left:50%;width: 400px; margin-left:-200px; color :#ec7305}
+
+.ald-form-home{ display: flex; flex-direction: row; justify-content: center;
+
+    width:600px;
 position: absolute;
-    top: 530px;
-    right: 450px;
+    top: 45%;
+    left:50%;
+    margin-left:-300px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 40px;
 }
+.ald-form-home input,.formReservation input {padding-left:10px;    margin : 0 20px;background-color: rgba(255,255,255,0.3);border: none;width:150px;height:50px; }
+.reservButtonFirst {border:none;padding: 15px 20px;height : 50px;background-color: rgba(236, 115, 5,0.5)}
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -27,3 +37,5 @@ position: absolute;
     height: 100%;
     border: none;
 }
+
+.formReservation input{border:rgba(236, 115, 5,1) solid 1px}
