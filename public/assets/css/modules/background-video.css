@@ -2,8 +2,10 @@ h1{
     display: flex;
     justify-content: center;
 }
-.ald-backgroundcss-video h1{
-
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .ald-backgroundcss-video, video{
@@ -13,18 +15,33 @@ h1{
 .ald-backgroundcss-video h1{position: absolute;top: 30%;z-index: 99;
     left:50%;width: 400px; margin-left:-200px; color :#ec7305}
 
-.ald-form-home{ display: flex; flex-direction: row; justify-content: center;
-
+.ald-form-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width:600px;
-position: absolute;
+    position: absolute;
     top: 45%;
     left:50%;
     margin-left:-300px;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.8);
     padding: 40px;
 }
-.ald-form-home input,.formReservation input {padding-left:10px;    margin : 0 20px;background-color: rgba(255,255,255,0.3);border: none;width:150px;height:50px; }
-.reservButtonFirst {border:none;padding: 15px 20px;height : 50px;background-color: rgba(236, 115, 5,0.5)}
+.ald-form-home input,.formReservation input {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin : 0 20px;
+    background-color: rgba(255,255,255,0.8);
+    border: none;width:150px;height:50px;
+}
+
+.reservButtonFirst {
+    border:none;
+    padding: 15px 20px;
+    margin-left: 20px;
+    height : 50px;
+    background-color: rgba(236, 115, 5,0.8)}
+
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -35,5 +52,10 @@ position: absolute;
     height: 100%;
     border: none;
 }
-
-.formReservation input{border:rgba(236, 115, 5,1) solid 1px}
+/*Reservation*/
+.formReservation{padding: 50px}
+.formReservation input{width:100%;border:rgba(236, 115, 5,1) solid 1px;background-color: #FFF4E4}
+.formUser{margin-top:30px;display: flex;flex-direction: column;align-items: flex-start;width: 100%}
+.formUser div{width:100%;padding:10px 30px}
+.formReservation .imgCarsInsert{height:130px;overflow: hidden;margin:0 auto;border-radius: 30px}
+.dateRev{display: flex;flex-direction: row;justify-content: space-between}

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 // list of accessible routes of your application, add every new route here
 // key : route to match
 // values : 1. controller name
@@ -19,6 +19,14 @@ return [
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
     'contact' => ['ContactController', 'index',],
-    'reservation' => ['ReservationController', 'index',],
-
+    'reservation' => ['ReservationController', 'add',],
+    'reservation/show' => ['ReservationController', 'show',],
+    'legal' => ['LegalController', 'rentalTerms'],
+    'legal/insurance' => ['LegalController', 'insurance'],
+    'legal/contact' => ['LegalController', 'contactUs'],
+    'legal/terms' => ['LegalController', 'termConditions'],
+    'legal/privacy' => ['LegalController', 'privacyPolice'],
+    'beach' => ['CarController', 'beach'],
+    'coast' => ['CarController', 'coast'],
+    'edition' => ['CarController', 'edition'],
 ];

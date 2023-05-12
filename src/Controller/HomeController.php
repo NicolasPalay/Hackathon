@@ -11,6 +11,7 @@ class HomeController extends AbstractController
      */
     public function index(): string
     {
+
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             if (isset($_GET['city'])) {
                 $cityGet = trim($_GET['city']);

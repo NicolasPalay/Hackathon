@@ -1,13 +1,47 @@
 .cardCarsHome {
     width:30%;
-padding:40px 20px 20px;
     border-radius: 30px;
     border: solid #FFAA00 1px;
     box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
     -webkit-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
     -moz-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset; margin:20px 20px;
 }
-.cardCarsHome img {width:100%;}
-.cardCarsHome div{width:80%; height:170px;overflow: hidden;margin:0 auto;border-radius: 30px}
-.cardCarsHome li {list-style: none;width:80%;margin:10px auto;   width:50%}
 
+.cardCarsHome img {
+    width:100%;
+    height: 100%;
+}
+
+.cardCarsHome div{
+    width:100%;
+    height:250px;
+    overflow: hidden;
+    margin:0 auto;
+    border-radius: 30px 30px 0 0;
+}
+
+.cardCarsHome li {
+    list-style: none;
+    margin:10px auto;
+    text-align: center;
+    text-underline: none;
+}
+
+.cardCarsHome ul a {
+    text-underline: none;
+    text-decoration: unset;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+.cardCarsHome a   {
+    color: black;
+}
+
+
+.row > *    {
+    padding-right: 0;
+    padding-left: 0;
+}

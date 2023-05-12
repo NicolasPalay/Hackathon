@@ -4,6 +4,9 @@
     align-items: normal;
     margin-top: 80px;
     font-family: "Arima", sans-serif;
+    max-width: 70%;
+    margin-bottom: 50px;
+    margin-left: 15%;
 }
 
 .ald-explanation-content h2   {
