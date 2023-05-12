@@ -1,0 +1,59 @@
+.ald-article-title  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ald-article-cards  {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ald-article-card1 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.ald-article-card2 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.ald-article-card3 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.ald-article-card4 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.ald-article-card1 p, .ald-article-card1 img  {
+    margin: 10px;
+}
+
+.ald-article-card2 p, .ald-article-card2 img  {
+    margin: 10px;
+}
+
+.ald-article-card3 p, .ald-article-card3 img  {
+    margin: 10px;
+}
+
+.ald-article-card4 p, .ald-article-card4 img  {
+    margin: 10px;
+}

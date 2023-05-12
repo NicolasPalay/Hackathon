@@ -18,7 +18,19 @@ return [
     'items/show' => ['ItemController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
+
     'reservation' => ['ReservationController', 'add',],
     'reservation/show' => ['ReservationController', 'show',],
+
+    'legal' => ['LegalController', 'rentalTerms'],
+    'legal/insurance' => ['LegalController', 'insurance'],
+    'legal/contact' => ['LegalController', 'contactUs'],
+    'legal/terms' => ['LegalController', 'termConditions'],
+    'legal/privacy' => ['LegalController', 'privacyPolice'],
+    'reservation' => ['ReservationController', 'index',],
+    'beach' => ['CarController', 'beach'],
+    'coast' => ['CarController', 'coast'],
+    'edition' => ['CarController', 'edition'],
+
 
 ];
