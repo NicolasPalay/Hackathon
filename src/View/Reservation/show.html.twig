@@ -1,7 +1,7 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <div class="container"></div>
+    <div class="container">
     <h1>Votre reservation</h1>
     <ul class="resulRes ">
         {% if reservation.id_van == 1 %}
@@ -17,5 +17,6 @@
         <li>Your lastname {{ reservation.last_name }}</li>
         <li>Your email{{ reservation.email }}</li>
     </ul>
-    <a href="/items">Back</a>
+    </div>
+
 {% endblock %}
