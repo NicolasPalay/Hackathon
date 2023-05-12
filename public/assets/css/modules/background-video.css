@@ -2,8 +2,10 @@ h1{
     display: flex;
     justify-content: center;
 }
-.ald-backgroundcss-video h1{
-
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .ald-backgroundcss-video, video{
