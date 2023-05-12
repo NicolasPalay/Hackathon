@@ -27,24 +27,21 @@ class ReservationController extends AbstractController
         $start = $_POST['start'];
         $return = $_POST['return'];
         $data = [$start,$return];
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($reservation)) {
             // clean $_POST data
             $reservation = array_map('trim', $_POST);
 
             // TODO validations (length, format...)
             var_dump($reservation);
-
-            // if validation is ok, insert and redirection
-/*            $reservationManager = new ReservationManager();
+            $reservationManager = new ReservationManager();
             $id= $reservationManager->insert($reservation);
-                // if validation is ok, insert and redirection
+
+header('Location: /reservation/show?id=' . $id);
+            return null;
 
 
+            }
 
-
-                return null;
-            }*/
-        }
 
 
         return $this->twig->render('Reservation/add.html.twig',['data'=>$data]);

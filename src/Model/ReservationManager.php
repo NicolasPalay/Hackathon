@@ -13,14 +13,16 @@ class ReservationManager extends AbstractManager
      */
     public function insert(array $reservation): int
     {
-        $statement = $this->pdo->prepare("INSERT INTO reservation (starting_date, end_date, id_van_id) VALUES (:starting_date, :end_date, :id_van_id)");
+        $statement = $this->pdo->prepare("INSERT INTO reservation (starting_date, end_date,
+       id_van_id) VALUES (:starting_date, :end_date, :id_van_id)");
         $statement->bindValue(':starting_date', $reservation['start'], PDO::PARAM_STR);
         $statement->bindValue(':end_date', $reservation['return'], PDO::PARAM_STR);
         $statement->bindValue(':id_van_id', $reservation['id_van'], PDO::PARAM_INT);
         $statement->execute();
         $idReservation = $this->pdo->lastInsertId();
 
-        $statement2 = $this->pdo->prepare("INSERT INTO user (first_name, last_name, email) VALUES (:first_name, :last_name, :email)");
+       $statement2 = $this->pdo->prepare("INSERT INTO user (first_name, last_name, email)
+       VALUES (:first_name, :last_name, :email)");
         $statement2->bindValue(':first_name', $reservation['first_name'], PDO::PARAM_STR);
         $statement2->bindValue(':last_name', $reservation['last_name'], PDO::PARAM_STR);
         $statement2->bindValue(':email', $reservation['email'], PDO::PARAM_STR);
@@ -31,7 +33,7 @@ class ReservationManager extends AbstractManager
         $statement3->bindValue(':van_id', $idUser , PDO::PARAM_INT);
         $statement3->bindValue(':reservation_id', $idReservation, PDO::PARAM_INT);
         $statement3->execute();
-        return (int)$this->pdo->lastInsertId();
+        return (int)$this->pdo->lastInsertId();/* */
     }
 
     /**
