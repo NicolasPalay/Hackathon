@@ -27,7 +27,7 @@ return [
     'legal/contact' => ['LegalController', 'contactUs'],
     'legal/terms' => ['LegalController', 'termConditions'],
     'legal/privacy' => ['LegalController', 'privacyPolice'],
-    'reservation' => ['ReservationController', 'index',],
+
     'beach' => ['CarController', 'beach'],
     'coast' => ['CarController', 'coast'],
     'edition' => ['CarController', 'edition'],

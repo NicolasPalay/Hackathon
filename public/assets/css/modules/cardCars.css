@@ -6,9 +6,17 @@
     -webkit-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
     -moz-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset; margin:20px 20px;
 }
+.cardCarsHome, .resulRes {
+    width:30%;
+    border-radius: 30px;
+    border: solid #FFAA00 1px;
+    box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
+    -webkit-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
+    -moz-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset; margin:20px 20px;
+}
 .cardCarsHome img, .resulRes li img {width:100%;height:auto}
 .cardCarsHome .imgCars{width:80%; height:170px;overflow: hidden;margin:0 auto;border-radius: 30px}
-.formReservation{padding: 50px;margin:50px auto; }
+.formReservation{margin:50px auto; }
 .cardCarsHome li ,.resulRes li{list-style: none;width:80%;margin:10px auto; }
 
 .resulRes{margin:30px auto}
