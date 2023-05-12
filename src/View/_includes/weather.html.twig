@@ -1,8 +1,14 @@
-{{ temp|round }}°c
-{{ name }}
- {{ description }}
 
+
+<div class="meteo">
 <form method="get">
-    <input type="text" name="city" value="choisir votre ville">
-    <button>envoyer</button>
+    <input class="button-city" type="text" name="city" placeholder="choose your town">
+    <button class="button-meteo">send</button>
 </form>
+</div>
+
+<div class="city ">
+    {{ temp|round }}°c
+    {{ name }}
+    {{ description }}
+</div>
