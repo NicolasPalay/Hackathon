@@ -53,9 +53,12 @@ h1{
     border: none;
 }
 /*Reservation*/
-.formReservation{padding: 50px}
+.formReservation{padding: 50px;width: 60%;margin:0 auto}
 .formReservation input{width:100%;border:rgba(236, 115, 5,1) solid 1px;background-color: #FFF4E4}
 .formUser{margin-top:30px;display: flex;flex-direction: column;align-items: flex-start;width: 100%}
 .formUser div{width:100%;padding:10px 30px}
-.formReservation .imgCarsInsert{height:130px;overflow: hidden;margin:0 auto;border-radius: 30px}
+.formReservation .imgCarsInsert{height:130px;margin:0 auto;border-radius: 30px;width:32.6% ;   overflow: hidden;}
 .dateRev{display: flex;flex-direction: row;justify-content: space-between}
+.imgCarsInsert img{width:100%}
+.dateRev img{width:40%}
+
