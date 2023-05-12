@@ -11,6 +11,11 @@
 @import "modules/articles.css";
 @import "modules/coast.css";
 /*variable declaration*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&display=swap');
+
+
 * {
     box-sizing: border-box;
     font-family: 'Cantarell', sans-serif;
@@ -25,23 +30,13 @@ a   {
 body    {
     background-color: #FFF4E4;
 }
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Arima', cursive;
+* {
+    font-family: 'Comfortaa', cursive;
 }
 
-@font-face {
-    font-family: 'Petrona', serif; /* link */
+h1 {
+    font-family: 'Dancing Script', cursive;
 }
-
-@font-face {
-    font-family: 'Arima', cursive; /* polices h1 et h2 */
-}
-
-@font-face {
-    font-family: 'Cantarell', sans-serif; /* text */
-}
-
 
 
 
