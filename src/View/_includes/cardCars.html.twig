@@ -1,5 +1,5 @@
 
-<section class="container">
+<section class="container" id="ourVans">
     <article class="row">
     {% for car in cars %}
 
@@ -8,7 +8,6 @@
 
         <div class="imgCars">
             <img src="/assets/images/{{ car.first_photo_link }}.webp">
-        <div>
             <a href="/{{ car.type }}"><img src="/assets/images/{{ car.first_photo_link }}.webp"></a>
         </div>
 
@@ -23,7 +22,8 @@
             <li>🚽 toilet</li>
                 {% endif %}
 </ul></a>
-    </div>
+
+        </div>
 {% endfor %}
     </article>
 </section>

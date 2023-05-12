@@ -1,4 +1,4 @@
-.cardCarsHome, .resulRes {
+.cardCarsHome {
     width:30%;
     border-radius: 30px;
     border: solid #FFAA00 1px;
@@ -6,6 +6,7 @@
     -webkit-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset;
     -moz-box-shadow: 0 5px 15px rgba(236, 115, 5, 0.3) inset; margin:20px 20px;
 }
+<<<<<<< HEAD
 .cardCarsHome, .resulRes {
     width:30%;
     border-radius: 30px;
@@ -18,8 +19,13 @@
 .cardCarsHome .imgCars{width:80%; height:170px;overflow: hidden;margin:0 auto;border-radius: 30px}
 .formReservation{margin:50px auto; }
 .cardCarsHome li ,.resulRes li{list-style: none;width:80%;margin:10px auto; }
+=======
+>>>>>>> c5db26e72ab99f8ab994b0188c75945622d3926e
 
-.resulRes{margin:30px auto}
+.cardCarsHome img {
+    width:100%;
+    height: 100%;
+}
 
 .cardCarsHome div{
     width:100%;
@@ -51,6 +57,6 @@ ol, ul {
 
 
 .row > *    {
-padding-right: 0;
-padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
