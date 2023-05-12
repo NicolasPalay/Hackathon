@@ -60,4 +60,5 @@ h1{
 .formReservation .imgCarsInsert{height:130px;margin:0 auto;border-radius: 30px;width:32.6% ;   overflow: hidden;}
 .dateRev{display: flex;flex-direction: row;justify-content: space-between}
 .imgCarsInsert img{width:100%}
+.dateRev img{width:40%}
 
