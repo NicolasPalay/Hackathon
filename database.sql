@@ -71,7 +71,7 @@ create table user
     first_name   varchar(255) not null,
     last_name    varchar(255) not null,
     email        varchar(255) not null,
-    phone_number varchar(15)  not null
+    phone_number varchar(15) null
 );
 
 create table van
@@ -111,11 +111,12 @@ create table car_choice
 
 create table location
 (
-    van_id         int not null,
-    reservation_id int not null,
-    constraint fk_Location_reservation_id
+    id_location     int auto_increment primary key,
+    reservation_id   int not null,
+    van_id           int not null,
+    constraint fk_location_reservation_id
         foreign key (reservation_id) references reservation (id_reservation),
-    constraint fk_Location_van_id
+    constraint fk_location_van_id
         foreign key (van_id) references van (id_van)
 );
 
