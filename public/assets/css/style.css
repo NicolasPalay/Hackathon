@@ -3,6 +3,8 @@
 @import 'modules/footer.css';
 @import 'modules/weather.css';
 @import 'modules/cardCars.css';
+@import 'modules/contact.css';
+@import 'modules/explination.css';
 @import "modules/insurance.css";
 @import "modules/rental-terms.css";
 @import "modules/privacy-police.css";
@@ -10,6 +12,7 @@
 @import 'modules/explination.css';
 @import "modules/articles.css";
 @import "modules/coast.css";
+
 /*variable declaration*/
 
 

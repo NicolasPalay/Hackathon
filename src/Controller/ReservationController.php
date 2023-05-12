@@ -46,7 +46,7 @@ class ReservationController extends AbstractController
             $reservation = array_map('trim', $_POST);
 
             // TODO validations (length, format...)
-            var_dump($reservation);
+
             $reservationManager = new ReservationManager();
             $id= $reservationManager->insert($reservation);
 
