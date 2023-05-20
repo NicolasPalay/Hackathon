@@ -24,7 +24,6 @@ class ReservationController extends AbstractController
             $reservation = array_map('trim', $_POST);
 
             // TODO validations (length, format...)
-            var_dump($reservation);
 
         $carsManager = new CarsManager();
         $cars = $carsManager->selectAll('title');
