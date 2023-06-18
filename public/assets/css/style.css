@@ -41,6 +41,13 @@ h1 {
     font-family: 'Dancing Script', cursive;
 }
 
+.aboutText h2  {
+    font-family: 'Dancing Script', cursive;
+}
+
+.aboutText p, .members  {
+    font-family: 'Comfortaa', cursive;
+}
 
 
 

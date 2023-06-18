@@ -26,7 +26,7 @@ return [
     'legal/contact' => ['LegalController', 'contactUs'],
     'legal/terms' => ['LegalController', 'termConditions'],
     'legal/privacy' => ['LegalController', 'privacyPolice'],
-    'beach' => ['CarController', 'beach'],
-    'coast' => ['CarController', 'coast'],
-    'edition' => ['CarController', 'edition'],
+    'Beach' => ['CarController', 'beach'],
+    'Coast' => ['CarController', 'coast'],
+    'Edition' => ['CarController', 'edition'],
 ];

@@ -1,4 +1,5 @@
 {# TODO : manage errors display #}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <h1>Click on the car that you want to take on your trip!</h1>
 <form action ="reservation/show" method="post">
@@ -6,14 +7,13 @@
 
         <label for="champ"></label>
         <input type="hidden" id="champ" name="id_van" value="1">
-
         <label class="col imgCarsInsert" for="van1"><img
                 onclick="document.getElementById('champ').value='1';"
-                src="/assets/images/beach-two-first-photo.webp" alt=""></label>
-        <label class="col imgCarsInsert" for="van2"><img
+                src="/assets/images/beach-two-first-photo.webp" class="car-1" alt=""></label>
+        <label class="col imgCarsInsert" for="van2"><img  class="car-2"
                 onclick="document.getElementById('champ').value='5';"
                 src="/assets/images/coast-two-first-photo.webp" alt=""></label>
-        <label class="col imgCarsInsert" for="van3"><img
+        <label class="col imgCarsInsert" for="van3"><img class="car-3"
                 onclick="document.getElementById('champ').value='9';"
                 src="/assets/images/edition-two-first-photo.webp" alt=""></label>
 
@@ -43,3 +43,21 @@
 
 
 </form>
+
+
+<script>$('.car-1').on('click', function(e){
+        e.preventDefault();
+        $(this).css('border-color', 'green');
+    });
+
+    $('.car-2').on('click', function(e){
+        e.preventDefault();
+        $(this).css('border-color', 'green');
+    });
+
+    $('.car-3').on('click', function(e){
+        e.preventDefault();
+        $(this).css('border-color', 'green');
+    });
+
+</script>
